@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="ANSI">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+		<title>Teste Projuris</title>
+		<style>
+			div { border: 0px solid black; }
+			.align-bottom { vertical-align: bottom; } 
+		</style>
+	</head>
+	<body>
+		<div class="container">
+		<form>
+			<div class="row">
+				<!-- <h1>Adicionar Pessoa</h1> -->
+				<div class="container">
+				  <!-- Content here -->
+				</div>
+				
+					<div class="p-3 mb-2 bg-light text-dark col-10">
+						<h1>Adicionar Pessoa</h1>
+					</div>
+					<div class="p-3 mb-2 bg-light text-dark col-2">
+						<button type="button" class="btn btn-danger align-middle">Cancelar Cadastro</button>
+					</div>
+				
+				
+				<!-- <div class="form-group col-1 align-self-end"> -->
+						<!-- <button type="button" class="btn btn-danger">Cancelar</button> -->
+					<!-- </div> -->
+				
+			</div>
+			<div class="row">
+				<div class="form-group col-3">
+					<label for="tipoPessoa">TIPO *</label>
+					<select name="tipoPessoa" id="tipoPessoa" class="form-control">
+						<option>Pessoa Física</option>
+						<option>Pessoa Jurídica</option>
+					</select>
+				</div>
+
+				<div class="form-group col-3">
+					<label for="tratamento">TRATAMENTO</label>
+					<input type="tratamento" class="form-control" id="tratamento" aria-describedby="emailHelp" placeholder="Tratamento">
+				</div>
+				
+				<div class="form-group col-6">
+					<label for="tratamento">NOME COMPLETO *</label>
+					<input type="nomeCompleto" class="form-control" id="nomeCompleto" aria-describedby="nomeCompleto" placeholder="Nome Completo">
+				</div>
+
+			</div>
+			
+			<div class="row">
+				<div class="form-group col-3">
+					<label for="tipoPessoa">GÊNERO *</label>
+					<select name="genero" id="genero" class="form-control">
+						<option>Masculino</option>
+						<option>Feminino</option>
+					</select>
+				</div>
+				
+				<div class="form-group col-3">
+					<label for="tratamento">CPF</label>
+					<input type="cpf" class="form-control" id="cpf" aria-describedby="cpf" placeholder="000.000.000-00" >
+				</div>
+				
+				<div class="form-group col-2">
+					<label for="tratamento">RG</label>
+					<input type="rg" class="form-control" id="cpf" aria-describedby="rg" placeholder="Informe o RG">
+				</div>
+				
+				<div class="form-group col-2">
+					<label for="tratamento">NASCIMENTO</label>
+					<input type="date" class="form-control" id="nascimento" aria-describedby="nascimento" placeholder="Informe a data">
+				</div>
+
+				<div class="form-group col-2">
+					<label for="advogado">ADVODGADO?*</label>
+					<select name="advogado" class="form-control">
+						<option>Sim</option>
+						<option>Não</option>
+					</select>
+				</div>
+			</div>
+			
+			<div class="row">
+				<div class="form-group col-12">
+					<label for="tipoPessoa">QUALIFICAÇÃO</label>
+					<input type="qualificacao" class="form-control" id="qualificacao" aria-describedby="qualificacao" placeholder="Insira mais informações sobre a pessoa">
+				</div>
+			</div>
+			
+			<div class="row">
+				<div class="form-group col-12">
+					<label for="tipoPessoa">PALAVRAS-CHAVE</label>
+					<input type="palavrasChave" class="form-control" id="palavrasChave" aria-describedby="palavrasChave" placeholder="Informe as palavras-chave desejadas">
+				</div>
+			</div>
+			
+			
+			<div class="row" >
+				<div class="form-group col-2">
+					<label for="email">EMAIL</label>
+					<select name="email" id="email" class="form-control">
+						<option>Pessoal</option>
+						<option>Comercial</option>
+					</select>
+				</div>
+
+				<div class="form-group col-4">
+					<label for="emailPorExtenso">&nbsp;</label>
+					<input type="emailPorExtenso" class="form-control" id="emailPorExtenso" aria-describedby="emailPorExtenso" placeholder="Informe o endereço de email">
+				</div>
+				
+				
+				
+				<div class="form-group col-2 align-self-end">
+					<button type="button" class="btn btn-primary btn-sm" aria-label="Left Align">
+					  <span class="glyphicon glyphicon-align-left" aria-hidden="true">+</span>
+					</button>
+					<input class="form-group-input" name="principalEmail" type="radio" id="principalEmail" vertical-align:middle>
+					<label class="form-group-label" for="principalEmail">Principal</label>
+				</div>
+				
+			</div>
+			
+			<div class="row">
+				<div class="form-group col-2">
+					<label for="telefone1">TELEFONE</label>
+					<select name="telefone1" id="telefone1" class="form-control">
+						<option>Pessoal</option>
+						<option>Comercial</option>
+					</select>
+				</div>
+
+				<div class="form-group col-2">
+					<label for="numeroTelefone1">&nbsp;</label>
+					<input type="numeroTelefone1" class="form-control" id="numeroTelefone1" aria-describedby="numeroTelefone1" placeholder="(47) 99700-6833">
+				</div>
+				<div class="form-group col-2  align-self-end">
+					<button type="button" class="btn btn-primary btn-sm" aria-label="Left Align">
+					  <span class="glyphicon glyphicon-align-left" aria-hidden="true">-</span>
+					</button>
+					<input class="form-group-input" name="principalTelefone1" type="radio" id="principalTelefone1">
+					<label class="form-group-label" for="principalTelefone1">Principal</label>
+				</div>
+			</div>
+			
+			<div class="row">
+				<div class="form-group col-2">
+					<select name="telefone2" id="telefone2" class="form-control">
+						<option>Comercial</option>
+						<option>Pessoal</option>
+					</select>
+				</div>
+
+				<div class="form-group col-2">
+					<input type="numeroTelefone2" class="form-control" id="numeroTelefone2" aria-describedby="numeroTelefone2" placeholder="(47) 91234-1234">
+				</div>
+				<div class="form-group col-2  align-self-end">
+					<button type="button" class="btn btn-primary btn-sm" aria-label="Left Align">
+					  <span class="glyphicon glyphicon-align-left" aria-hidden="true">+</span>
+					</button>
+					<input class="form-group-input" name="principalTelefone2" type="radio" id="principalTelefone2">
+					<label class="form-group-label" for="principalTelefone2">Principal</label>
+				</div>
+			</div>
+			
+			<div class="row">
+				<div class="form-group col-2">
+					<label for="endereco">ENDEREÇO</label>
+					<select name="endereco" id="endereco" class="form-control">
+						<option>Pessoal</option>
+						<option>Comercial</option>
+					</select>
+				</div>
+
+				<div class="form-group col-6">
+					<label for="numeroendereco">&nbsp;</label>
+					<input type="numeroendereco" class="form-control" id="numeroendereco" aria-describedby="numeroendereco" placeholder="Informe o endereço">
+				</div>
+				<div class="form-group col-2  align-self-end">
+					<button type="button" class="btn btn-primary btn-sm" aria-label="Left Align">
+					  <span class="glyphicon glyphicon-align-left" aria-hidden="true">+</span>
+					</button>
+					<input class="form-group-input" name="principalEndereco" type="radio" id="principalEndereco">
+					<label class="form-group-label" for="principalEndereco">Principal</label>
+				</div>
+			</div>
+			
+			<button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+			  ^ Ocultar campos
+			</button>
+			
+			</br>
+			</br>
+					
+			<div class="p-3 mb-2 bg-light text-dark col-12">
+				<button type="button" class="btn btn-primary">Salvar</button>
+				<button type="button" class="btn btn-default">Cancelar</button>
+			</div>
+			
+			
+			
+			
+			
+		</form>
+			
+			
+		</div>
+	</body>
+</html>

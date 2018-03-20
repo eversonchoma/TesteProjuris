@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Teste Projuris</title> 	
+		<script src="https://www.w3schools.com/lib/w3.js"></script>
+		<script>
+			function adicionaDiv() {
+				var divList = document.getElementsByTagName("div");
+				var lista = divList.length;
+				<!-- console.log('lista: ' + lista); -->
+				for (var i = 0; i < lista; i++) {
+					var novaDiv = document.createElement("div");
+					decorarDiv(novaDiv);
+					divList[i].appendChild(novaDiv);
+				}
+			} 
+					
+			function decorarDiv(div) {
+				div.textContent = 'Nova Div';
+			}
+		</script>
+	</head>
+	<body>
+		<div id="1">Div A
+			<div id="2">Div B</div>
+		</div>
+		<!-- <input id="clickMe" type="button" value="Adicionar Div" onclick="adicionaDiv();" /> -->
+	</body>
+</html>

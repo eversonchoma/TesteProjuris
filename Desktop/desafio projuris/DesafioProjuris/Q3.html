@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="ANSI">
+		<title>Teste Projuris</title> 	
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script>
+			function situacaoAnimal(regiao, animal) {
+				return $("[regiao='"+regiao+"'] > [data-animal='"+animal+"']").html();
+			}
+			function clickDoBotao() {
+				var resultado = situacaoAnimal(
+					document.getElementById("txtRegiao").value,
+					document.getElementById("txtAnimal").value
+				);
+				document.getElementById("txtCriticidade").value = resultado;
+			}
+			//$(document).on('click', '#Id', function () {
+			//	console.log('hello world');
+			//})
+		</script>
+	</head>
+	<body>
+		<div>
+			<ul regiao="Norte">
+				<li data-animal="condor negro">Ameaçado de Extinção</li>
+				<li data-animal="sapo cururu">Abundante</li>
+			</ul>
+			<ul regiao="sul">
+				<li data-animal="mamute">Extinto</li>
+			</ul>
+			
+			<!-- <ul> -->
+				<!-- Região: -->
+				<!-- <input name="txtRegiao" type="text" maxlength="512" id="txtRegiao" class="searchField"/> -->
+				<!-- <br> -->
+				<!-- Animal: -->
+				<!-- <input name="txtAnimal" type="text" maxlength="512" id="txtAnimal" class="searchField"/> -->
+				<!-- <p>Retornar Sitiuação do animal por região</p> -->
+				<!-- <button onclick="clickDoBotao();">Click</button> -->
+				<!-- <p></p> -->
+				<!-- <input name="txtCriticidade" type="text" maxlength="512" id="txtCriticidade" class="searchField"/> -->
+			<!-- </ul> -->
+		</div>
+	</body>
+</html>
